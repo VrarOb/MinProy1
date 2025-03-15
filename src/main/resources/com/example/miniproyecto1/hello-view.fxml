@@ -3,17 +3,20 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.miniproyecto1.GameController">
+      fx:controller="com.example.miniproyecto1.GameController"
+      style="-fx-padding: 10px;">
+  <Label text="Escritura Rápida" style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-translate-y: -15px;"/>
+  <ImageView fx:id="sunImage" fitWidth="90" fitHeight="90" style="-fx-translate-y: -15px;"/>
+  <Label fx:id="wordLabel" text="Palabra" style="-fx-font-size: 32px; -fx-font-weight: bold;"/>
+  <VBox spacing="5" alignment="CENTER">
+    <TextField fx:id="inputField" prefWidth="30" prefHeight="15" promptText="..."/>
+    <Button text="Validar" onAction="#validateWord" prefWidth="120"/>
+  </VBox>
+  <Label fx:id="messageLabel" text=""/>
+  <HBox spacing="20" alignment="CENTER">
+    <Label fx:id="timerLabel" text="Tiempo: 20s"/>
+    <Label fx:id="levelLabel" text="Nivel: 1"/>
+    <Label fx:id="livesLabel" text="Vidas: 4"/>
+  </HBox>
 
-  <Label fx:id="wordLabel" text="Palabra" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
-  <TextField fx:id="inputField"/>
-  <Button text="Validar" onAction="#validateWord"/>
-  <Label fx:id="messageLabel" text="" style="-fx-text-fill: red;"/>
-
-  <Label fx:id="timerLabel" text="Tiempo: 20s"/>
-  <Label fx:id="levelLabel" text="Nivel: 1"/>
-  <Label fx:id="livesLabel" text="Vidas: 4"/>
-
-  <ImageView fx:id="sunImage" fitWidth="100" fitHeight="100"/>
 </VBox>
-
