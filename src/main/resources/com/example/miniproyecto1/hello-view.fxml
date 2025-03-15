@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.miniproyecto1.GameController">
+
+  <Label fx:id="wordLabel" text="Palabra" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+  <TextField fx:id="inputField"/>
+  <Button text="Validar" onAction="#validateWord"/>
+  <Label fx:id="messageLabel" text="" style="-fx-text-fill: red;"/>
+
+  <Label fx:id="timerLabel" text="Tiempo: 20s"/>
+  <Label fx:id="levelLabel" text="Nivel: 1"/>
+  <Label fx:id="livesLabel" text="Vidas: 4"/>
+
+  <ImageView fx:id="sunImage" fitWidth="100" fitHeight="100"/>
+</VBox>
+
