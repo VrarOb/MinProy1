@@ -12,8 +12,8 @@ import javafx.scene.image.ImageView;
 import javafx.util.Duration;
 
 /**
- * Controlador de la interfaz gráfica del juego .
- * Maneja la interacción entre el usuario y la logica del juego.
+ * Controlador de la interfaz grafica del juego .
+ * Maneja la interaccion entre el usuario y la logica del juego.
  */
 public class GameController {
     @FXML private Label wordLabel, timerLabel, levelLabel, livesLabel, messageLabel;
@@ -76,7 +76,7 @@ public class GameController {
 
     /**
      * Valida la palabra ingresada por el usuario al presionar "validar" o "enter".
-     * @param event evento de acción del botón o la tecla "Enter".
+     * @param event evento de accion del boton o la tecla "Enter".
      */
     @FXML
     private void validateWord(ActionEvent event) {
@@ -101,7 +101,7 @@ public class GameController {
     }
 
     /**
-     * Actualiza la interfaz con la información más reciente.
+     * Actualiza la interfaz con la informacion mas reciente.
      */
     private void updateView() {
         wordLabel.setText(gameModel.getCurrentWord());
@@ -111,7 +111,7 @@ public class GameController {
     }
 
     /**
-     * Actualiza la imagen del sol eclipsado según las vidas .
+     * Actualiza la imagen del sol eclipsado segun las vidas .
      */
     private void updateSunImage() {
         String[] sunImages = {

@@ -3,12 +3,12 @@ package com.example.miniproyecto1;
 import java.util.Random;
 
 /**
- * Representa la lógica del juego "Escritura Rápida".
+ * Representa la logica del juego "Escritura Rapida".
  * Maneja palabras aleatorias, niveles, tiempo y oportunidades del jugador.
  */
 
 public class GameModel {
-    private String[] words = {"java" , "programacion", "computador", "eventos", "ayuda","git", "interfaz",};
+    private String[] words = {"java" , "programacion", "computador", "eventos", "ayuda","git", "interfaz","jdk", "maven", "rapido", "escritura","doc","pc","parangatirimicuaro"};
     private String currentWord;
     private int level = 1;
     private int time = 21;
